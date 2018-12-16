@@ -64,7 +64,7 @@ class menu
 
   void printitems(menu*node)
   {
-    cout<<">>"<<node->name<<endl;
+    cout<<"************PRODUCTS*************"<<endl<<">>"<<node->name<<endl;
     string name=node->name;
     name+=".txt";
     int size=fptr.calclines(name);
@@ -72,8 +72,11 @@ class menu
     {
       cout<< (node->root->nodes[i])->name<<endl;
     }
+    items * roo=node->root->nodes[0];
+    cout<<endl<<endl<<"     "<<(roo->nodes[0])->name;
     cout<<endl;
   }
+
 
   private:
   menu* next;

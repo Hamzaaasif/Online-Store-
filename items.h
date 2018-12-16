@@ -18,8 +18,12 @@ class items
       items* child=new items;
       //size=fptr.calclines("shoes.txt");
       child->name = fptr.file(name,i+1);
-      child->nodes=NULL;
+      child->nodes=new items*[1];
       temp->nodes[i]=child;
+      items *product=new items;
+      product->name="PRODUCT CODES";
+      product->nodes=NULL;
+      child->nodes[0]=product;
     }
     if(*root == NULL)
     {
@@ -33,6 +37,8 @@ void print(items * root)
   cout<<root->nodes[0]->name<<" ";
   cout<<root->nodes[1]->name<<" ";
   cout<<root->nodes[2]->name<<endl<<endl;
+  root=root->nodes[0];
+  cout<<root->nodes[0]->name<<" ";
   //cout<<root->nodes[3]->name<<" ";
   //cout<<root->nodes[4]->name<<endl;
 }

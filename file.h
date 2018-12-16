@@ -36,6 +36,15 @@ int calclines(string filename)
     }
     return index;
 }
+
+void printfile()
+{
+    ifstream quest("PRODUCTS.txt");
+    while(getline(quest , temp))
+    {
+      cout<<temp<<endl;
+    }
+}
   private:
   string temp;
   int index;

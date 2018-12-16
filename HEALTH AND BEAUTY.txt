@@ -1,3 +1,7 @@
 1-Hair colour
 2-Medicines
 3-Health
+4-Beauty tools
+5-skin care
+6-Makeup
+7-Food supliments

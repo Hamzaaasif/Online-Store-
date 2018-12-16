@@ -1,3 +1,5 @@
 1-Jeans
 2-Lipsticks
 3-Shirts
+4-Travel
+5-Accessories

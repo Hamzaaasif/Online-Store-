@@ -1,0 +1,6 @@
+1-Mobile
+2-Tablets
+3-Laptops
+4-TV
+5-Computers
+6-LCDs

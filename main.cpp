@@ -10,6 +10,7 @@ int main()
   menu m;
   m.insert(&start);
   cout<<endl<<"               ***WELCOME TO ONLINE SHOPING STORE***  "<<endl;
+  label2:
   cout<<endl<<"           *********MAIN MENU**********  "<<endl;
   m.print(start);
   cout<<endl<<"        *********Choose 1-7********** : ";
@@ -28,11 +29,15 @@ int main()
   cout<<"        *********Enter Quantity********** : ";
   cin>>qua;
   c.push(qua,fptr.file("PRODUCTS.txt",choice),&top);
-  cout<<"Press '1' to add more products "<<endl;
+  cout<<"Press '1' to add more products and 2 for main menu"<<endl;
   cin>>choice;
   if(choice==1)
   {
     goto label;
+  }
+  if(choice==2)
+  {
+    goto label2;
   }
   else
   {

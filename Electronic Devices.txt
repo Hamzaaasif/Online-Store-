@@ -4,3 +4,5 @@
 4-TV
 5-Computers
 6-Computer accessories
+7-gcA
+8-JDNC

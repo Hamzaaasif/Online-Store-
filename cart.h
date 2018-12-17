@@ -33,14 +33,11 @@ cart* top(cart * top)
     }
   }
 
-
-
   void pop(cart ** top)
   {
     if(*top==NULL)
     {
       cout<<"Empty";
-     // return NULL;;
     }
     else
     {
@@ -50,7 +47,6 @@ cart* top(cart * top)
     int quan=curr->quantity;
     free(curr);
     cout<< "Product : " << temp <<endl<< "Quantity : "<<quan<<endl<<endl;
-   // return temp;
     }
   }
 

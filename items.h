@@ -16,7 +16,6 @@ class items
     for(i=0;i<size;i++)
     {
       items* child=new items;
-      //size=fptr.calclines("shoes.txt");
       child->name = fptr.file(name,i+1);
       child->nodes=new items*[1];
       temp->nodes[i]=child;
